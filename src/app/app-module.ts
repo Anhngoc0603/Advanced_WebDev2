@@ -15,6 +15,8 @@ import { FakeProduct2 } from './fake-product2/fake-product2';
 import { CoindeskAPI } from './coindesk-api/coindesk-api';
 import { Catalog } from './catalog/catalog';
 import { Ex18 } from './ex18/ex18';
+import { Login } from './login/login';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -29,12 +31,14 @@ import { Ex18 } from './ex18/ex18';
     FakeProduct2,
     CoindeskAPI,
     Catalog,
-    Ex18
+    Ex18,
+    Login
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [
     provideBrowserGlobalErrorListeners()
