@@ -9,6 +9,7 @@ import { Ex13detail } from './ex13detail/ex13detail';
 import { FakeProduct } from './fake-product/fake-product';
 import { FakeProduct2 } from './fake-product2/fake-product2';
 import { CoindeskAPI } from './coindesk-api/coindesk-api';
+import { Catalog } from './catalog/catalog';
 
 const routes: Routes = [
   {path:"gioi-thieu", component: About},
@@ -22,6 +23,7 @@ const routes: Routes = [
   {path:"ex26", component: FakeProduct},
   {path:"ex27", component: FakeProduct2},
   {path:"ex28", component: CoindeskAPI},
+  {path:"ex14-product", component: Catalog},
   {path:"**", component: Notfound}
 ];
 
