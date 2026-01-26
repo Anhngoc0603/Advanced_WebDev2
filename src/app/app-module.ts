@@ -13,6 +13,7 @@ import { HttpClientModule} from '@angular/common/http';
 import { FakeProduct } from './fake-product/fake-product';
 import { FakeProduct2 } from './fake-product2/fake-product2';
 import { CoindeskAPI } from './coindesk-api/coindesk-api';
+import { Catalog } from './catalog/catalog';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { CoindeskAPI } from './coindesk-api/coindesk-api';
     Ex13detail,
     FakeProduct,
     FakeProduct2,
-    CoindeskAPI
+    CoindeskAPI,
+    Catalog
   ],
   imports: [
     BrowserModule,
