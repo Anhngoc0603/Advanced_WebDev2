@@ -14,6 +14,7 @@ import { FakeProduct } from './fake-product/fake-product';
 import { FakeProduct2 } from './fake-product2/fake-product2';
 import { CoindeskAPI } from './coindesk-api/coindesk-api';
 import { Catalog } from './catalog/catalog';
+import { Ex18 } from './ex18/ex18';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { Catalog } from './catalog/catalog';
     FakeProduct,
     FakeProduct2,
     CoindeskAPI,
-    Catalog
+    Catalog,
+    Ex18
   ],
   imports: [
     BrowserModule,
