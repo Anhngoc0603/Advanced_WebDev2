@@ -6,6 +6,9 @@ import { Listproduct } from './listproduct/listproduct';
 import { Productdetail } from './productdetail/productdetail';
 import { Ex13 } from './ex13/ex13';
 import { Ex13detail } from './ex13detail/ex13detail';
+import { FakeProduct } from './fake-product/fake-product';
+import { FakeProduct2 } from './fake-product2/fake-product2';
+import { CoindeskAPI } from './coindesk-api/coindesk-api';
 
 const routes: Routes = [
   {path:"gioi-thieu", component: About},
@@ -16,6 +19,9 @@ const routes: Routes = [
   {path:"san-pham-1/:id", component: Productdetail},
   {path:'ex13-product',component:Ex13},
   {path:'ex13-product/:id', component:Ex13detail},
+  {path:"ex26", component: FakeProduct},
+  {path:"ex27", component: FakeProduct2},
+  {path:"ex28", component: CoindeskAPI},
   {path:"**", component: Notfound}
 ];
 

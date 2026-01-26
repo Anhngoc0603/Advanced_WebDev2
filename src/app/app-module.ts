@@ -9,7 +9,10 @@ import { Listproduct } from './listproduct/listproduct';
 import { Productdetail } from './productdetail/productdetail';
 import { Ex13 } from './ex13/ex13';
 import { Ex13detail } from './ex13detail/ex13detail';
-import { HttpClient} from '@angular/common/http';
+import { HttpClientModule} from '@angular/common/http';
+import { FakeProduct } from './fake-product/fake-product';
+import { FakeProduct2 } from './fake-product2/fake-product2';
+import { CoindeskAPI } from './coindesk-api/coindesk-api';
 
 @NgModule({
   declarations: [
@@ -19,12 +22,15 @@ import { HttpClient} from '@angular/common/http';
     Listproduct,
     Productdetail,
     Ex13,
-    Ex13detail
+    Ex13detail,
+    FakeProduct,
+    FakeProduct2,
+    CoindeskAPI
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClient
+    HttpClientModule
   ],
   providers: [
     provideBrowserGlobalErrorListeners()
