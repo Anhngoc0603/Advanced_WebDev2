@@ -1,7 +1,7 @@
 import { NgModule, provideBrowserGlobalErrorListeners } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing-module';
+import { AppRoutingModule, Routing } from './app-routing-module';
 import { App } from './app';
 import { Notfound } from './notfound/notfound';
 import { About } from './about/about';
@@ -20,6 +20,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
+    Routing,
     App,
     Notfound,
     About,

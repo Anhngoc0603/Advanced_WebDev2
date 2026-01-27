@@ -35,3 +35,8 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+export const Routing=[
+Listproduct,
+Ex18,
+Login,
+]
