@@ -13,7 +13,7 @@
           <input type="text" formControlName="name" placeholder="Nguyen Van A">
         <!-- Hiện thị lỗi nếu đã submit và trường name không hợp lệ -->
           <small *ngIf="submitted && registrationForm.get('name')?.invalid">
-            Vui lòng nhập tên
+            Bạn chưa nhập tên
           </small> 
         </div>
         <!-- Email -->
@@ -46,7 +46,6 @@
         <!-- Time -->
         <div class="form-group time-group">
             <label class="time-label">Ca học</label>
-
             <div class="radio-group">
                 <label>
                 <input type="radio" value="sang" formControlName="time"> Sáng
@@ -55,10 +54,11 @@
                 <input type="radio" value="toi" formControlName="time"> Tối
                 </label>
             </div>
-        </div>
             <small *ngIf="submitted && registrationForm.get('time')?.invalid">
             Vui lòng chọn ca học
             </small>
+        </div>
+            
 
 
         <!-- Agree -->
@@ -66,7 +66,7 @@
           <input type="checkbox" formControlName="agree">
           <span>Đồng ý với điều khoản</span>
         </div>
-        <small *ngIf="submitted && registrationForm.get('agree')?.invalid">
+        <small *ngIf="submitted && registrationForm.get('agree')?.invalid" style="color:red">
           Bạn phải đồng ý điều khoản
         </small>
         <!-- Submit -->

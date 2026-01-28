@@ -18,6 +18,7 @@ import { Ex18 } from './ex18/ex18';
 import { Login } from './login/login';
 import { ReactiveFormsModule } from '@angular/forms';
 import { Registration } from './registration/registration';
+import { Mathematics } from './mathematics/mathematics';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { Registration } from './registration/registration';
     Catalog,
     Ex18,
     Login,
-    Registration
+    Registration,
+    Mathematics
   ],
   imports: [
     BrowserModule,
