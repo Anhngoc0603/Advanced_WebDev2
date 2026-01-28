@@ -1,7 +1,7 @@
 import { NgModule, provideBrowserGlobalErrorListeners } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing-module';
+import { AppRoutingModule, Routing } from './app-routing-module';
 import { App } from './app';
 import { Notfound } from './notfound/notfound';
 import { About } from './about/about';
@@ -14,9 +14,13 @@ import { FakeProduct } from './fake-product/fake-product';
 import { FakeProduct2 } from './fake-product2/fake-product2';
 import { CoindeskAPI } from './coindesk-api/coindesk-api';
 import { Catalog } from './catalog/catalog';
+import { Ex18 } from './ex18/ex18';
+import { Login } from './login/login';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
+    Routing,
     App,
     Notfound,
     About,
@@ -27,12 +31,15 @@ import { Catalog } from './catalog/catalog';
     FakeProduct,
     FakeProduct2,
     CoindeskAPI,
-    Catalog
+    Catalog,
+    Ex18,
+    Login
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [
     provideBrowserGlobalErrorListeners()

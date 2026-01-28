@@ -1,23 +1,20 @@
-<p>about works!</p>
-<table>
-  <tr>
-    <td>ID:</td>
-    <td>{{ student_id }}</td>
-  </tr>
-  <tr>
-    <td>Name:</td>
-    <td>{{ student_name }}</td>
-  </tr>
-  <tr>
-    <td>Class:</td>
-    <td>{{ student_class }}</td>
-  </tr>
-  <tr>
-    <td></td>
-    <td><img [src]="my_uni_logo" height="150" width="150" /></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td><img [src]="my_new_logo" height="150" width="150" /></td>
-  </tr>
-</table>
+<div class="about-card">
+  <div class="avatar">
+    <img [src]="my_photo" alt="Student photo">
+  </div>
+
+  <div class="info">
+    <div class="row">
+      <span class="label">Name</span>
+      <span class="value">{{ student_name }}</span>
+    </div>
+    <div class="row">
+      <span class="label">ID</span>
+      <span class="value">{{ student_id }}</span>
+    </div>
+    <div class="row">
+      <span class="label">Class</span>
+      <span class="value">{{ student_class }}</span>
+    </div>
+  </div>
+</div>

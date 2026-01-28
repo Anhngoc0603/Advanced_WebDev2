@@ -8,21 +8,21 @@ export class CatalogService {
   {"Cateid":"cate1","CateName":"nuoc ngot",
     "Products":[
       {"ProductId":"p1","ProductName":"Coca","Price":100,
-      "Image":"assets/h1.png"},
+      "Image":"assets/coca.jpg"},
       {"ProductId":"p2","ProductName":"Pepsi","Price":300,
-      "Image":"assets/h2.png"},
+      "Image":"assets/pepsi.jpg"},
       {"ProductId":"p3","ProductName":"Sting","Price":200,
-      "Image":"assets/h3.png"},
+      "Image":"assets/sting.jpg"},
     ]
   },
   {"Cateid":"cate2","CateName":"Bia",
     "Products":[
       {"ProductId":"p4","ProductName":"Heleiken","Price":500,
-      "Image":"assets/h4.png"},
+      "Image":"assets/Heleiken.webp"},
       {"ProductId":"p5","ProductName":"333","Price":400,
-      "Image":"assets/h5.png"},
+      "Image":"assets/333.jpg"},
       {"ProductId":"p6","ProductName":"Sai Gon","Price":600,
-      "Image":"assets/h6.png"},
+      "Image":"assets/saigon.jpg"},
     ]
   },
   ]

@@ -7,9 +7,8 @@ import { Component } from '@angular/core';
   styleUrl: './about.css',
 })
 export class About {
-  student_id: string = "SV123"
-  student_name: string = "Nguyen Van A"
-  student_class: string = "K234112E"
-  my_uni_logo = 'assets/img/my_uni_logo.png';
-  my_new_logo = 'assets/img/logo.webp';
+  student_id: string = "K234111404"
+  student_name: string = "Nguyen Thi Anh Ngoc"
+  student_class: string = "K234111E"
+  my_photo = 'assets/photo.jpg';
 }
