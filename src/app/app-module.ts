@@ -19,6 +19,7 @@ import { Login } from './login/login';
 import { ReactiveFormsModule } from '@angular/forms';
 import { Registration } from './registration/registration';
 import { Mathematics } from './mathematics/mathematics';
+import { Book } from './book/book';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { Mathematics } from './mathematics/mathematics';
     Ex18,
     Login,
     Registration,
-    Mathematics
+    Mathematics,
+    Book
   ],
   imports: [
     BrowserModule,

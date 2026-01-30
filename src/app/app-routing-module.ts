@@ -14,6 +14,7 @@ import { Ex18 } from './ex18/ex18';
 import { Login } from './login/login';
 import { Registration } from './registration/registration';
 import { Mathematics } from './mathematics/mathematics';
+import { Book } from './book/book';
 const routes: Routes = [
   {path:"gioi-thieu", component: About},
   // {path:"khach-hang-1", component: Listcustomer},
@@ -31,7 +32,8 @@ const routes: Routes = [
   {path:"login", component: Login},
   {path:"register", component: Registration},
   {path: "mathematics", component:Mathematics},
-  {path:"**", component: Notfound}
+  {path: "ex39", component:Book},
+  {path:"**", component: Notfound},
 ];
 
 @NgModule({
