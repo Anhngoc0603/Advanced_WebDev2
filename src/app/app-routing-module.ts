@@ -9,7 +9,12 @@ import { Ex13detail } from './ex13detail/ex13detail';
 import { FakeProduct } from './fake-product/fake-product';
 import { FakeProduct2 } from './fake-product2/fake-product2';
 import { CoindeskAPI } from './coindesk-api/coindesk-api';
-
+import { Catalog } from './catalog/catalog';
+import { Ex18 } from './ex18/ex18';
+import { Login } from './login/login';
+import { Registration } from './registration/registration';
+import { Mathematics } from './mathematics/mathematics';
+import { Book } from './book/book';
 const routes: Routes = [
   {path:"gioi-thieu", component: About},
   // {path:"khach-hang-1", component: Listcustomer},
@@ -22,7 +27,13 @@ const routes: Routes = [
   {path:"ex26", component: FakeProduct},
   {path:"ex27", component: FakeProduct2},
   {path:"ex28", component: CoindeskAPI},
-  {path:"**", component: Notfound}
+  {path:"ex14-product", component: Catalog},
+  {path:"khach-hang-4", component: Ex18},
+  {path:"login", component: Login},
+  {path:"register", component: Registration},
+  {path: "mathematics", component:Mathematics},
+  {path: "ex39", component:Book},
+  {path:"**", component: Notfound},
 ];
 
 @NgModule({
@@ -30,3 +41,8 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+export const Routing=[
+Listproduct,
+Ex18,
+Login,
+]
